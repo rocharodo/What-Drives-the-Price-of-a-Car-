@@ -423,7 +423,7 @@ The graph below provides a direct comparison between the original data vs. year 
 Now that we have thoroughly cleansed the data, we can proceed to prepare it for further analysis, focusing particularly on the categorical features.
 <h3>Encoding Categorical Features</h3>
 To facilitate analysis, I applied the following encoding techniques:
-<ol>
+<ul>
 <li>
     One Hot Encoding: For the features with multiple categories, I used One Hot Encoding to create binary vectors:
     <ol>
@@ -456,7 +456,7 @@ To facilitate analysis, I applied the following encoding techniques:
 </li>
     </ol>
 </li>
-</ol>
+</ul>
 
 <h3>Data Preparation and Encoding</h3>
 <p>
