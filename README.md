@@ -784,7 +784,7 @@ With these insights and the transformed data, we can now proceed to select a sui
         SFS is the recommended model: Despite having a slightly higher Mean Squared Error (MSE), SFS exhibits a significantly lower Magnitude (9919.28), indicating less overfitting and better generalization capabilities.
     </li>
     <li>
-        Ridge Regression may be overfitting: Although Ridge Regression achieves the lowest MSE (56792448.46), its high Magnitude (38786.64) suggests potential overfitting, making it less reliable for predictions.
+        Ridge Regression may be overfitting: Although Ridge Regression achieves the lowest MSE (56792448.46), its high Magnitude (38786.64) suggests potential overfitting, making it less reliable for predictions and computationally more expensive.
     </li>
     <li>
         RFE performs similarly to SFS: Recursive Feature Elimination (RFE) has a comparable MSE to SFS but slightly lower Magnitude. However, its performance is not significantly better than SFS.
