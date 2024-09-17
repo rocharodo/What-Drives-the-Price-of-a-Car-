@@ -929,7 +929,7 @@ To predict car prices, the following models were evaluated:
         Year: A 1-year increase in a car's age corresponds to a $3,342.60 decrease in price.
     </li>
     <li>
-        Transmission_other: Cars with non-standard transmissions (e.g., manual, semi-automatic) are valued $1,841.80 higher than those with standard transmissions.
+        Transmission_other: Cars with non-standard transmissions (e.g., manual, automatic) are valued $1,841.80 higher than those with standard transmissions.
     </li>
     <li>
         Drive_unknown: Cars with unknown drive types are priced $1,622 lower than those with specified drive types.
