@@ -462,7 +462,9 @@ To facilitate analysis, I applied the following encoding techniques:
 <p>
     The data preparation and encoding process was accomplished utilizing a Python script, which generated a new CSV file incorporating all the specified conditions. This script implemented data cleansing recommendations and applied encoding techniques to all categorical features, ensuring optimal data quality and readiness for analysis.
 </p>
-
+<p>
+The "model" feature was excluded from the analysis due to its high cardinality (thousands of unique values). One-hot encoding this feature would have introduced an impractically large number of columns, complicating data manipulation without significantly enhancing model performance. Therefore, it was removed from the dataset.           
+</p>
 
 <h2>Correlation Analysis</h2>
 <p>
