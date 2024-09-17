@@ -806,5 +806,157 @@ Key Takeaways:
 
 </div>
 
+<div id="ExecutiveSummary">
+<h1 style="text-align:center;">Used Car Price Prediction Report</h1>
+<h1>Executive Summary</h1>
+<p>
+    This report presents the findings of a data analysis aimed at identifying key factors influencing used car prices. Using a Sequential Feature Selection (SFS) model, we determined the most relevant features and their coefficients. Our results provide actionable insights for used car dealers to fine-tune their inventory and pricing strategies.
+</p>
+<h2>Methodology</h2>
+<p>
+    This predictive modeling project employed a structured approach to analyze the vehicle dataset and estimate car prices.
+</p>
+<h3>Dataset</h3>
+<p>
+    The dataset utilized in this study consisted of 426,000 vehicle records, containing a mix of numerical and categorical features:
+</p>
+<ul>
+<li>
+    Numerical features: price, year, odometer
+</li>
+<li>
+    Categorical features: region, manufacturer, model, condition, cylinders, fuel, transmission, drive, size, type, paint_color, state
+</li>
+<li>
+    Identifier: id, VIN
+</li>
+</ul>
+
+
+<h3>Data Preprocessing</h3>
+<p>
+    The dataset underwent rigorous data cleansing and preparation:
+</p>
+<ul>
+<li>
+    Handling missing values and outliers
+</li>
+<li>
+    Data normalization and feature scaling
+</li>
+<li>
+    Encoding categorical variables
+</li>
+<li>
+    Transforming numerical features
+</li>
+</ul>
+
+
+<h3>Model</h3>
+To predict car prices, the following models were evaluated:
+<ul>
+    <li>
+        Ridge Regression: regularized linear regression to minimize overfitting
+    </li>
+    <li>
+        Sequential Feature Selector (SFS): iterative feature selection to identify most relevant features
+    </li>
+    <li>
+        Recursive Feature Elimination (RFE): recursive feature ranking to optimize model performance
+    </li>
+</ul>
+
+
+<h3>Evaluation Metrics</h3>
+<p>
+    Model performance was assessed using:
+</p>
+<ul>
+    <li>
+        Mean Squared Error (MSE): measures prediction accuracy
+    </li>
+    <li>
+        Magnitude: evaluates feature importance
+    </li>
+</ul>
+
+
+<h3>Model Selection</h3>
+<p>
+    The best-performing model was selected based on evaluation metrics.
+    This structured methodology ensured a thorough analysis of the dataset, enabling accurate predictions and insightful recommendations.
+</p>
+
+<h2>Key Findings</h2>
+<p>
+    The analysis revealed the following significant features and their coefficients:
+</p>
+<div style="display: block; overflow-x: auto; min-height: 150px; width: 100%;margin-right:auto;">
+<table style="border-collapse: collapse; width: 50%; border-radius: 10px; overflow: hidden; margin: auto; background-color: white;">
+<thead style="background-color: #f0f0f0; border-bottom: 1px solid #ddd;">
+    <tr>
+        <th style="padding: 10px; border-right: 1px solid #ddd;">Feature</th>
+        <th style="padding: 10px;">Coefficient</th>
+    </tr>
+</thead>
+<tbody>
+    <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 10px; border-top: none; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;">year</td>
+        <td style="padding: 10px; border-top: none; border-bottom: 1px solid #ddd;">3342.6</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 10px; border-right: 1px solid #ddd;">transmission_other</td>
+        <td style="padding: 10px;">1841.8</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 10px; border-right: 1px solid #ddd;">drive_unknown</td>
+        <td style="padding: 10px;">-1622</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 10px; border-right: 1px solid #ddd; border-bottom: none;">drive_fwd</td>
+        <td style="padding: 10px; border-bottom: none;">-3113</td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+
+<h2>Interpretation</h2>
+<ul>
+    <li>
+        Year: A 1-year increase in a car's age corresponds to a $3,342.60 decrease in price.
+    </li>
+    <li>
+        Transmission_other: Cars with non-standard transmissions (e.g., manual, semi-automatic) are valued $1,841.80 higher than those with standard transmissions.
+    </li>
+    <li>
+        Drive_unknown: Cars with unknown drive types are priced $1,622 lower than those with specified drive types.
+    </li>
+    <li>
+        Drive_fwd: Cars with front-wheel drive (FWD) are priced $3,113 lower than those with other drive types.
+    </li>
+</ul>
+<h2>Recommendations for Used Car Dealers</h2>
+<ol>
+    <li>
+        Age-based pricing: Adjust prices according to a car's age, considering the $3,342.60 decrease per year.
+    </li>
+    <li>
+        Transmission premium: Charge a premium for non-standard transmissions.
+    </li>
+    <li>
+        Drive type consideration: Account for drive type differences in pricing, favoring cars with specified drive types.
+    </li>
+    <li>
+        Inventory optimization: Focus on acquiring cars with desirable features (e.g., newer models, non-standard transmissions) to maximize profits.
+    </li>
+</ol>
+<h2>Conclusion</h2>
+<p>
+    This analysis provides valuable insights for used car dealers to refine their pricing strategies and inventory management. By understanding the impact of key features on car prices, dealers can make informed decisions to optimize their business.
+</p>
+</div>
+
 
 </div>
