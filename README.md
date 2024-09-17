@@ -139,7 +139,7 @@ The goal is to extract insights on the relationships between these attributes an
 <br />
 <div style="display: block; overflow-x: auto; min-height: 150px; width: 100%;margin-right:auto;">
 <table style="border-collapse: collapse; width: 50%; border-radius: 10px; overflow: hidden;margin:auto;background-color:white;">
-    <thead style="background-color: #f0f0f0; border-bottom: 1px solid #ddd;">
+<thead style="background-color: #f0f0f0; border-bottom: 1px solid #ddd;">
         <tr style="text-align: right;">
             <th style="padding: 10px; border-right: 1px solid #ddd;">Column</th>
             <th style="padding: 10px;">Non-Null Count</th>
@@ -147,7 +147,7 @@ The goal is to extract insights on the relationships between these attributes an
             <th style="padding: 10px;">Percent</th>
             <th style="padding: 10px;">Dtype</th>
         </tr>
-    </thead>
+</thead>
     <tbody>
         <tr>
             <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">id</td>
