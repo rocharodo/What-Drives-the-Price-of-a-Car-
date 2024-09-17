@@ -312,7 +312,7 @@ The goal is to extract insights on the relationships between these attributes an
     This analysis facilitates a deeper understanding of the complex relationships between categorical features and the target variable, ultimately supporting more informed decision-making.
 </p>
 <div style="text-align:center;">
-    <img width="1100" src="data/histo.png" />
+    <img width="1100" src="images/histo.png" />
 </div>
 
 <h2>Initial Observations and Data Quality Concerns</h2>
@@ -403,7 +403,7 @@ To prevent skewness and ensure robust analysis, I removed the bottom 10% and top
 These data preparation steps enabled me to create a cleaner, more reliable dataset for subsequent analysis and modeling.
 The results can be seen in the following graph:
 <div style="text-align:center;">
-    <img width="1100" src="data/histo_cleansed.png" />
+    <img width="1100" src="images/histo_cleansed.png" />
 </div>
 </p>
 <h2>Result Analysis</h2>
@@ -416,7 +416,7 @@ The price graph is now displaying different information. Previously, it displaye
 The graph below provides a direct comparison between the original data vs. year and the cleansed data vs. year. At a glance, we can appreciate the significant improvement in data distribution. The cleansed data, now more evenly distributed, will serve as the foundation for further analysis, enabling more accurate and reliable conclusions.
 </p>
 <div style="text-align:center;">
-    <img width="1100" src="data/pricevsyear.png" />
+    <img width="1100" src="images/pricevsyear.png" />
 </div>
 
 <h2>Data Preparation</h2>
@@ -469,7 +469,7 @@ To facilitate analysis, I applied the following encoding techniques:
     With the encoded data, I conducted a correlation analysis to identify relationships between features. The most salient features, driving the model's performance, are:
 </p>
 <div style="text-align:left;">
-    <img src="data/corr.png" />
+    <img src="images/corr.png" />
 </div>
 <h3>Key Findings</h3>
 <p>
