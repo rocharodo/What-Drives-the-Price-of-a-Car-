@@ -543,7 +543,6 @@ With these insights and the transformed data, we can now proceed to select a sui
 <p>
     By comparing the performance of these models, we can determine which one provides the most insightful and accurate predictions, ultimately informing data-driven decisions.
     <br />
-    Or, if you prefer a more concise version:
 </p>
 <h3>Model Evaluation</h3>
 <p>
