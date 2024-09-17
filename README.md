@@ -1,5 +1,3 @@
-# What-Drives-the-Price-of-a-Car-
-you should provide clear recommendations to your client -- a used car dealership -- as to what consumers value in a used car.
     <div style="margin: 20px; background-color:#FFFFF0; ">
         <div id="DataProblemDefinition">
             <h1>Data Problem Definition:</h1>
