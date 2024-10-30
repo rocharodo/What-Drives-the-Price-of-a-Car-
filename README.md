@@ -54,222 +54,222 @@
     I will use the following steps to get familiar with the dataset and identify quality issues: <br />
 </p>
 <ul>
-    <li>
-        Step 1: Initial Data Review
-        <ul>
-            <li>
-                Check the dataset's dimensions (number of rows, columns)
-            </li>
-            <li>
-                Review the data types for each column (numeric, categorical, date, etc.)
-            </li>
-        </ul>
-    </li>
-    <li>
-        Step 2: Summary Statistics
-        <ul>
-            <li>
-                Calculate summary statistics for numeric columns (mean, median, mode, min, max, std dev)
-            </li>
-            <li>
-                Generate frequency distributions for categorical columns
-            </li>
-        </ul>
-    </li>
-    <li>
-        Step 3: Data Visualization
-        <ul>
-            <li>
-                Plot histograms or density plots for numeric columns
-            </li>
-            <li>
-                Create bar charts for categorical columns
-            </li>
-            <li>
-                Use scatter plots or correlation matrices to explore relationships between columns
-            </li>
-        </ul>
-    </li>
-    <li>
-        Step 4: Missing Value Analysis
-        <ul>
-            <li>
-                Identify columns with missing values
-            </li>
-            <li>
-                Calculate the percentage of missing values for each column
-            </li>
-        </ul>
-    </li>
-    <li>
-        Step 5: Data Quality Checks
-        <ul>
-            <li>
-                Check for invalid or inconsistent values
-            </li>
-            <li>
-                Identify duplicates or redundant records
-            </li>
-            <li>
-                Verify data formats (e.g., date, time, categorical)
-            </li>
-        </ul>
-    </li>
-    <li>
-        Step 6: Data Profiling
-        <ul>
-            <li>
-                Create a data profile report summarizing the findings
-            </li>
-            <li>
-                Document data quality issues, inconsistencies, and areas for improvement        <ul>
-            </li>
-        </ul>
-    </li>
+<li>
+    Step 1: Initial Data Review
+    <ul>
+        <li>
+            Check the dataset's dimensions (number of rows, columns)
+        </li>
+        <li>
+            Review the data types for each column (numeric, categorical, date, etc.)
+        </li>
+    </ul>
+</li>
+<li>
+    Step 2: Summary Statistics
+    <ul>
+        <li>
+            Calculate summary statistics for numeric columns (mean, median, mode, min, max, std dev)
+        </li>
+        <li>
+            Generate frequency distributions for categorical columns
+        </li>
+    </ul>
+</li>
+<li>
+    Step 3: Data Visualization
+    <ul>
+        <li>
+            Plot histograms or density plots for numeric columns
+        </li>
+        <li>
+            Create bar charts for categorical columns
+        </li>
+        <li>
+            Use scatter plots or correlation matrices to explore relationships between columns
+        </li>
+    </ul>
+</li>
+<li>
+    Step 4: Missing Value Analysis
+    <ul>
+        <li>
+            Identify columns with missing values
+        </li>
+        <li>
+            Calculate the percentage of missing values for each column
+        </li>
+    </ul>
+</li>
+<li>
+    Step 5: Data Quality Checks
+    <ul>
+        <li>
+            Check for invalid or inconsistent values
+        </li>
+        <li>
+            Identify duplicates or redundant records
+        </li>
+        <li>
+            Verify data formats (e.g., date, time, categorical)
+        </li>
+    </ul>
+</li>
+<li>
+    Step 6: Data Profiling
+    <ul>
+        <li>
+            Create a data profile report summarizing the findings
+        </li>
+        <li>
+            Document data quality issues, inconsistencies, and areas for improvement        <ul>
+        </li>
+    </ul>
+</li>
 </ul>
 <br />
 <p>Here is the information of the raw data:</p>
 <br />
 <div style="display: block; overflow-x: auto; min-height: 150px; width: 100%;margin-right:auto;">
-    <table style="border-collapse: collapse; width: 50%; border-radius: 10px; overflow: hidden;margin:auto;background-color:white;">
-        <thead style="background-color: #f0f0f0; border-bottom: 1px solid #ddd;">
-            <tr style="text-align: right;">
-                <th style="padding: 10px; border-right: 1px solid #ddd;">Column</th>
-                <th style="padding: 10px;">Non-Null Count</th>
-                <th style="padding: 10px;">Null Counts</th>
-                <th style="padding: 10px;">Percent</th>
-                <th style="padding: 10px;">Dtype</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">id</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">426880</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.000000</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">int64</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">region</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">426880</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.000000</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">price</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">426880</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.000000</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">int64</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">year</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">425675</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">1205</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.282281</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">float64</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">manufacturer</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">409234</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">17646</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">4.133714</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">model</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">421603</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">5277</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">1.236179</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">condition</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">252776</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">174104</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">40.785232</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">cylinders</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">249202</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">177678</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">41.622470</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">fuel</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">423867</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">3013</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.705819</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">odometer</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">422480</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">4400</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">1.030735</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">float64</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">title_status</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">418638</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">8242</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">1.930753</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">transmission</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">424324</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">2556</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.598763</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">VIN</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">265838</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">161042</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">37.725356</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">drive</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">296313</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">130567</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">30.586347</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">size</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">120519</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">306361</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">71.767476</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">type</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">334022</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">92858</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">21.752717</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">paint_color</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">296677</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">130203</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">30.501078</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-            <tr>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">state</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">426880</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.000000</td>
-                <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
-            </tr>
-        </tbody>
-    </table>
+<table style="border-collapse: collapse; width: 50%; border-radius: 10px; overflow: hidden;margin:auto;background-color:white;">
+<thead style="background-color: #f0f0f0; border-bottom: 1px solid #ddd;">
+<tr style="text-align: right;">
+    <th style="padding: 10px; border-right: 1px solid #ddd;">Column</th>
+    <th style="padding: 10px;">Non-Null Count</th>
+    <th style="padding: 10px;">Null Counts</th>
+    <th style="padding: 10px;">Percent</th>
+    <th style="padding: 10px;">Dtype</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">id</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">426880</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.000000</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">int64</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">region</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">426880</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.000000</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">price</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">426880</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.000000</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">int64</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">year</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">425675</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">1205</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.282281</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">float64</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">manufacturer</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">409234</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">17646</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">4.133714</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">model</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">421603</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">5277</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">1.236179</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">condition</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">252776</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">174104</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">40.785232</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">cylinders</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">249202</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">177678</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">41.622470</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">fuel</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">423867</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">3013</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.705819</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">odometer</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">422480</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">4400</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">1.030735</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">float64</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">title_status</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">418638</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">8242</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">1.930753</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">transmission</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">424324</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">2556</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.598763</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">VIN</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">265838</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">161042</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">37.725356</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">drive</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">296313</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">130567</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">30.586347</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">size</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">120519</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">306361</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">71.767476</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">type</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">334022</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">92858</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">21.752717</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">paint_color</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">296677</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">130203</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">30.501078</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+<tr>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">state</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">426880</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">0.000000</td>
+    <td style="padding:10px;border-top:none;border-bottom:1px solid #ddd;border-right:1px solid #ddd;">object</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 <div>
@@ -286,23 +286,23 @@
 <div id="HistogramDistribution">
 <h2>Histogram and Distribution</h2>
 <p>
-    The following graphs are presented in two separate categories: <br />
-    <h3>Numerical Features: Histograms</h3>
-    These graphs display the distribution of numerical features through histograms, providing a visual representation of the data's central tendency, dispersion, and shape.
-    <br />
-    <h3>Categorical Features: Grouped Distributions</h3>
-    These graphs illustrate the relationship between categorical features and the target variable (price) by showing the grouped distribution of the feature versus the price. This allows for an examination of how different categories impact the price, enabling insights into potential outliers and patterns.
-    <br />
-    By visualizing the grouped distribution, we can identify:
-    <ol>
-        <li>
-            Categories with exceptionally high or low prices
-        </li>
-        <li>
-            Categories with limited or excessive price variability
-        </li>
-    </ol>
-    This analysis facilitates a deeper understanding of the complex relationships between categorical features and the target variable, ultimately supporting more informed decision-making.
+The following graphs are presented in two separate categories: <br />
+<h3>Numerical Features: Histograms</h3>
+These graphs display the distribution of numerical features through histograms, providing a visual representation of the data's central tendency, dispersion, and shape.
+<br />
+<h3>Categorical Features: Grouped Distributions</h3>
+These graphs illustrate the relationship between categorical features and the target variable (price) by showing the grouped distribution of the feature versus the price. This allows for an examination of how different categories impact the price, enabling insights into potential outliers and patterns.
+<br />
+By visualizing the grouped distribution, we can identify:
+<ol>
+    <li>
+        Categories with exceptionally high or low prices
+    </li>
+    <li>
+        Categories with limited or excessive price variability
+    </li>
+</ol>
+This analysis facilitates a deeper understanding of the complex relationships between categorical features and the target variable, ultimately supporting more informed decision-making.
 </p>
 <div style="text-align:center;">
     <img width="1100" src="histo.png" />
@@ -310,93 +310,93 @@
 
 <h2>Initial Observations and Data Quality Concerns</h2>
 <p>
-    Upon examining the grouped distributions, it is readily apparent that the data contains:
-    <ol>
-        <li>
-            Outliers and erroneous information - like the 10 digit chevrolet or the 1234567890 volvo -, which can significantly compromise the accuracy and reliability of any subsequent analysis
-        </li>
-        <li>
-            A significantly uneven distribution between manufacturers, with some having a disproportionately large or small number of data points
-        </li>
-    </ol>
-    <h3>
-        Need for Data Cleansing
-    </h3>
-    To ensure the integrity of our analysis, it is essential to perform a thorough data cleansing exercise to:
-    <ol>
-        <li>
-            Identify and remove outliers that may skew the results
-        </li>
-        <li>
-            Correct or eliminate erroneous or invalid data points
-        </li>
-        <li>
-            Handle missing values or inconsistencies
-        </li>
-        <li>
-            Eliminate duplicates
-        </li>
-    </ol>
-    By doing so, we can enhance the quality and reliability of the data, thereby supporting more robust and meaningful insights. This crucial step will enable us to build a stronger foundation for our analysis and mitigate potential risks associated with flawed data.
+Upon examining the grouped distributions, it is readily apparent that the data contains:
+<ol>
+    <li>
+        Outliers and erroneous information - like the 10 digit chevrolet or the 1234567890 volvo -, which can significantly compromise the accuracy and reliability of any subsequent analysis
+    </li>
+    <li>
+        A significantly uneven distribution between manufacturers, with some having a disproportionately large or small number of data points
+    </li>
+</ol>
+<h3>
+    Need for Data Cleansing
+</h3>
+To ensure the integrity of our analysis, it is essential to perform a thorough data cleansing exercise to:
+<ol>
+    <li>
+        Identify and remove outliers that may skew the results
+    </li>
+    <li>
+        Correct or eliminate erroneous or invalid data points
+    </li>
+    <li>
+        Handle missing values or inconsistencies
+    </li>
+    <li>
+        Eliminate duplicates
+    </li>
+</ol>
+By doing so, we can enhance the quality and reliability of the data, thereby supporting more robust and meaningful insights. This crucial step will enable us to build a stronger foundation for our analysis and mitigate potential risks associated with flawed data.
 </p>
 </div>
 
 <div id="DataPreparation">
 <h1>Data Preparation</h1>
 <p>
-    Following an in-depth analysis of the data, I identified several initiatives to cleanse and preprocess the data for further analysis. The steps I took are outlined below:
-    <h4>Feature Selection and Removal</h4>
-    I dropped the following features to minimize redundancy and optimize the dataset:
-    <ol>
-        <li>
-            id
-        </li>
-        <li>
-            VIN
-        </li>
-        <li>
-            size
-        </li>
-        <li>
-            region
-        </li>
-    </ol>
-    <h4>Handling Missing Values</h4>
-    To ensure data quality, I removed rows with null values in the following critical features:
-    <ol>
-        <li>
-            year
-        </li>
-        <li>
-            manufacturer
-        </li>
-    </ol>
-    <h4>Imputation of Missing Values</h4>
-    For the remaining features with null values, I applied the following imputation strategies:
-    <ol>
-        <li>
-            Fuel: replaced with "gas"
-        </li>
-        <li>
-            title_status: replaced with "missing"
-        </li>
-        <li>
-            drive: replaced with "unknown"
-        </li>
-        <li>
-            paint_color: replaced with "unknown"
-        </li>
-        <li>
-            condition: replaced with "unknown"
-        </li>
-        <li>
-            type: replaced with "unknown"
-        </li>
-        <li>
-            model: replaced with "missing"
-        </li>
-    </ol>
-    <h4>Outlier Removal</h4>
+Following an in-depth analysis of the data, I identified several initiatives to cleanse and preprocess the data for further analysis. The steps I took are outlined below:
+<h4>Feature Selection and Removal</h4>
+I dropped the following features to minimize redundancy and optimize the dataset:
+<ol>
+    <li>
+        id
+    </li>
+    <li>
+        VIN
+    </li>
+    <li>
+        size
+    </li>
+    <li>
+        region
+    </li>
+</ol>
+<h4>Handling Missing Values</h4>
+To ensure data quality, I removed rows with null values in the following critical features:
+<ol>
+    <li>
+        year
+    </li>
+    <li>
+        manufacturer
+    </li>
+</ol>
+<h4>Imputation of Missing Values</h4>
+For the remaining features with null values, I applied the following imputation strategies:
+<ol>
+    <li>
+        Fuel: replaced with "gas"
+    </li>
+    <li>
+        title_status: replaced with "missing"
+    </li>
+    <li>
+        drive: replaced with "unknown"
+    </li>
+    <li>
+        paint_color: replaced with "unknown"
+    </li>
+    <li>
+        condition: replaced with "unknown"
+    </li>
+    <li>
+        type: replaced with "unknown"
+    </li>
+    <li>
+        model: replaced with "missing"
+    </li>
+</ol>
+<h4>Outlier Removal</h4>
 <p>
     To prevent skewness and ensure robust analysis, I removed the bottom 10% and top 5% of values in the price feature, effectively eliminating outliers.
 </p>
@@ -420,12 +420,12 @@
 </div>
 <h2>Result Analysis</h2>
 <p>
-    <h3>Improved Data Distribution</h3>
-    As evident from the graphs, our data now exhibits a more even distribution. This is consistently observed across all graphs, with the manufacturer vs. price graph serving as a prime example. Here, we can see that the prices for each manufacturer are now more evenly distributed, indicating the removal of the most prominent outliers.
-    <h3>Enhanced Price Analysis</h3>
-    The price graph is now displaying different information. Previously, it displayed a simple price histogram. Now, it showcases a price vs. year distribution, revealing the average prices across all years. This new representation uncovers a cyclical pattern and a discernible trend, offering valuable insights into price fluctuations over time.
-    <h3>Comparative Analysis</h3>
-    The graph below provides a direct comparison between the original data price vs. year and the cleansed data price vs. year. At a glance, we can appreciate the significant improvement in data distribution. The cleansed data, now more evenly distributed, will serve as the foundation for further analysis, enabling more accurate and reliable conclusions.
+<h3>Improved Data Distribution</h3>
+As evident from the graphs, our data now exhibits a more even distribution. This is consistently observed across all graphs, with the manufacturer vs. price graph serving as a prime example. Here, we can see that the prices for each manufacturer are now more evenly distributed, indicating the removal of the most prominent outliers.
+<h3>Enhanced Price Analysis</h3>
+The price graph is now displaying different information. Previously, it displayed a simple price histogram. Now, it showcases a price vs. year distribution, revealing the average prices across all years. This new representation uncovers a cyclical pattern and a discernible trend, offering valuable insights into price fluctuations over time.
+<h3>Comparative Analysis</h3>
+The graph below provides a direct comparison between the original data price vs. year and the cleansed data price vs. year. At a glance, we can appreciate the significant improvement in data distribution. The cleansed data, now more evenly distributed, will serve as the foundation for further analysis, enabling more accurate and reliable conclusions.
 </p>
 <div style="text-align:center;">
     <img width="1100" src="pricevsyear.png" />
@@ -436,38 +436,38 @@ Now that we have thoroughly cleansed the data, we can proceed to prepare it for 
 <h3>Encoding Categorical Features</h3>
 To facilitate analysis, I applied the following encoding techniques:
 <ol>
-    <li>
-        One Hot Encoding: For the features with multiple categories, I used One Hot Encoding to create binary vectors:
-        <ol>
-            <li>
-                model
-            </li>
-            <li>
-                Transmission
-            </li>
-            <li>
-                paint_color
-            </li>
-            <li>
-                state
-            </li>
-            <li>
-                fuel
-            </li>
-            <li>
-                title_status
-            </li>
-            <li>
-                drive
-            </li>
-            <li>
-                type
-            </li>
-            <li>
-                condition
-            </li>
-        </ol>
-    </li>
+<li>
+One Hot Encoding: For the features with multiple categories, I used One Hot Encoding to create binary vectors:
+<ol>
+<li>
+    model
+</li>
+<li>
+    Transmission
+</li>
+<li>
+    paint_color
+</li>
+<li>
+    state
+</li>
+<li>
+    fuel
+</li>
+<li>
+    title_status
+</li>
+<li>
+    drive
+</li>
+<li>
+    type
+</li>
+<li>
+    condition
+</li>
+</ol>
+</li>
 </ol>
 
 <h3>Data Preparation and Encoding</h3>
@@ -488,29 +488,29 @@ To facilitate analysis, I applied the following encoding techniques:
     To identify the most accurate model, I evaluated three distinct regression models, each with its strengths and weaknesses. The selected models were:
 </p>
 <ol>
-    <li>
-        Ridge Regression: A linear regression model that uses L2 regularization to reduce overfitting by minimizing the magnitude of model coefficients.
-    </li>
-    <li>
-        Lasso Linear regression with L1 regularization for feature selection and reduced multicollinearity.
-    </li>
-    <li>
-        Linear Regression Basic linear regression for simple relationships and initial analysis.
-    </li>
-    <li>
-        Elastic Net Hybrid linear regression combining L1 and L2 regularization for balanced regularization.
-    </li>
+<li>
+    Ridge Regression: A linear regression model that uses L2 regularization to reduce overfitting by minimizing the magnitude of model coefficients.
+</li>
+<li>
+    Lasso Linear regression with L1 regularization for feature selection and reduced multicollinearity.
+</li>
+<li>
+    Linear Regression Basic linear regression for simple relationships and initial analysis.
+</li>
+<li>
+    Elastic Net Hybrid linear regression combining L1 and L2 regularization for balanced regularization.
+</li>
 </ol>
 <p>
     The objective of this evaluation was twofold:
 </p>
 <ul>
-    <li>
-        Achieve a balance between Mean Squared Error (MSE), ensuring accurate predictions while minimizing overfitting.
-    </li>
-    <li>
-        Identify the coefficients of each feature, enabling the analysis of their impact on car prices.
-    </li>
+<li>
+    Achieve a balance between Mean Squared Error (MSE), ensuring accurate predictions while minimizing overfitting.
+</li>
+<li>
+    Identify the coefficients of each feature, enabling the analysis of their impact on car prices.
+</li>
 </ul>
 <p>
     By comparing the performance of these models, we can determine which one provides the most insightful and accurate predictions, ultimately informing data-driven decisions.
@@ -520,62 +520,62 @@ To facilitate analysis, I applied the following encoding techniques:
 </p>
 
 <div style="display: block; overflow-x: auto; min-height: 150px; width: 100%;margin-right:auto;">
-    <table style="border-collapse: collapse; width: 50%; border-radius: 10px; overflow: hidden; margin: auto; background-color: white;">
-        <thead style="background-color: #f0f0f0; border-bottom: 1px solid #ddd;">
-            <tr>
-                <th>Model</th>
-                <th>Best Score</th>
-                <th>Mean Squared Error (MSE)</th>
-                <th>Elapsed Time</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr style="background-color:lightgreen;">
-                <td>Ridge</td>
-                <td>0.561262</td>
-                <td>40,246,517.02</td>
-                <td>30 seconds</td>
-            </tr>
-            <tr>
-                <td>Linear Regression</td>
-                <td>0.552364</td>
-                <td>41,062,787.54</td>
-                <td>50 seconds</td>
-            </tr>
-            <tr>
-                <td>Lasso</td>
-                <td>0.541976</td>
-                <td>42,015,664.01</td>
-                <td>2 hours 56 minutes</td>
-            </tr>
-            <tr>
-                <td>Elastic Net</td>
-                <td>0.382332</td>
-                <td>56,660,232.62</td>
-                <td>15 minutes</td>
-            </tr>
-        </tbody>
-    </table>
+<table style="border-collapse: collapse; width: 50%; border-radius: 10px; overflow: hidden; margin: auto; background-color: white;">
+<thead style="background-color: #f0f0f0; border-bottom: 1px solid #ddd;">
+<tr>
+    <th>Model</th>
+    <th>Best Score</th>
+    <th>Mean Squared Error (MSE)</th>
+    <th>Elapsed Time</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background-color:lightgreen;">
+    <td>Ridge</td>
+    <td>0.561262</td>
+    <td>40,246,517.02</td>
+    <td>30 seconds</td>
+</tr>
+<tr>
+    <td>Linear Regression</td>
+    <td>0.552364</td>
+    <td>41,062,787.54</td>
+    <td>50 seconds</td>
+</tr>
+<tr>
+    <td>Lasso</td>
+    <td>0.541976</td>
+    <td>42,015,664.01</td>
+    <td>2 hours 56 minutes</td>
+</tr>
+<tr>
+    <td>Elastic Net</td>
+    <td>0.382332</td>
+    <td>56,660,232.62</td>
+    <td>15 minutes</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 <h1>Conclusions</h1>
 
 <h2>Model Performance Comparison</h2>
 <ul>
-    <li>Ridge Regression outperforms Linear Regression, Lasso and Elastic Net in terms of Best Score (0.561262) and Mean Squared Error (MSE) (40,246,517.02).</li>
-    <li>
-        Linear regression comes second with a score of 0.552364 an MSE of 41062787.54 and 50 seconds
-    </li>
-    <li>Lasso Regression has the longest training time (2 hours 56 minutes), despite its relatively poor performance.</li>
-    <li>Elastic Net Regression has the worst performance among the three models, with the lowest Best Score (0.382332) and highest MSE (56,660,232.62).</li>
+<li>Ridge Regression outperforms Linear Regression, Lasso and Elastic Net in terms of Best Score (0.561262) and Mean Squared Error (MSE) (40,246,517.02).</li>
+<li>
+    Linear regression comes second with a score of 0.552364 an MSE of 41062787.54 and 50 seconds
+</li>
+<li>Lasso Regression has the longest training time (2 hours 56 minutes), despite its relatively poor performance.</li>
+<li>Elastic Net Regression has the worst performance among the three models, with the lowest Best Score (0.382332) and highest MSE (56,660,232.62).</li>
 </ul>
 
 <h2>Time-Efficiency Tradeoff</h2>
 <ul>
-    <li>Ridge Regression: Best performance and fastest training time (30 seconds).</li>
-    <li>Linear Regression has a very good performance (50 seconds) but is not better than Ridge Regression</li>
-    <li>Elastic Net Regression: Relatively slow training time (15 minutes) considering its poor performance.</li>
-    <li>Lasso Regression: Longest training time (2 hours 56 minutes), making it the least efficient.</li>
+<li>Ridge Regression: Best performance and fastest training time (30 seconds).</li>
+<li>Linear Regression has a very good performance (50 seconds) but is not better than Ridge Regression</li>
+<li>Elastic Net Regression: Relatively slow training time (15 minutes) considering its poor performance.</li>
+<li>Lasso Regression: Longest training time (2 hours 56 minutes), making it the least efficient.</li>
 </ul>
 
 <h2>Error Analysis</h2>
@@ -599,15 +599,15 @@ To facilitate analysis, I applied the following encoding techniques:
     The dataset utilized in this study consisted of 426,000 vehicle records, containing a mix of numerical and categorical features:
 </p>
 <ul>
-    <li>
-        Numerical features: price, year, odometer
-    </li>
-    <li>
-        Categorical features: region, manufacturer, model, condition, cylinders, fuel, transmission, drive, size, type, paint_color, state
-    </li>
-    <li>
-        Identifier: id, VIN
-    </li>
+<li>
+    Numerical features: price, year, odometer
+</li>
+<li>
+    Categorical features: region, manufacturer, model, condition, cylinders, fuel, transmission, drive, size, type, paint_color, state
+</li>
+<li>
+    Identifier: id, VIN
+</li>
 </ul>
 
 
@@ -616,57 +616,57 @@ To facilitate analysis, I applied the following encoding techniques:
     The dataset underwent rigorous data cleansing and preparation:
 </p>
 <ul>
-    <li>
-        Handling missing values and outliers
-    </li>
-    <li>
-        Data normalization and feature scaling
-    </li>
-    <li>
-        Encoding categorical variables
-    </li>
-    <li>
-        Transforming numerical features
-    </li>
+<li>
+    Handling missing values and outliers
+</li>
+<li>
+    Data normalization and feature scaling
+</li>
+<li>
+    Encoding categorical variables
+</li>
+<li>
+    Transforming numerical features
+</li>
 </ul>
 
 
 <h3>Model</h3>
 To predict car prices, the following models were evaluated:
 <ul>
-    <li>
-        Ridge Regression:
-        Ridge Regression is a regularized linear regression technique that minimizes overfitting by adding a penalty term to the cost function.
-    </li>
+<li>
+    Ridge Regression:
+    Ridge Regression is a regularized linear regression technique that minimizes overfitting by adding a penalty term to the cost function.
+</li>
 
-    <li>
-        Lasso (Least Absolute Shrinkage and Selection Operator):
-        Lasso is another regularized linear regression technique.
-    </li>
+<li>
+    Lasso (Least Absolute Shrinkage and Selection Operator):
+    Lasso is another regularized linear regression technique.
+</li>
 
-    <li>
-        Linear Regression:
-        Linear Regression is a basic linear regression model.
-    </li>
-    <li>
-        Elastic Net:
-        Elastic Net is a hybrid regularized linear regression technique that combines Ridge and Lasso.
-    </li>
+<li>
+    Linear Regression:
+    Linear Regression is a basic linear regression model.
+</li>
+<li>
+    Elastic Net:
+    Elastic Net is a hybrid regularized linear regression technique that combines Ridge and Lasso.
+</li>
 </ul>
 <h3>Evaluation Metrics</h3>
 <p>
     Model performance was assessed using:
 </p>
 <ul>
-    <li>
-        Mean Squared Error (MSE): measures prediction accuracy
-    </li>
-    <li>
-        Score: Evaluates the model's ability to make accurate predictions.
-    </li>
-    <li>
-        Time/Performance: Measures the computational efficiency and speed of the model.
-    </li>
+<li>
+    Mean Squared Error (MSE): measures prediction accuracy
+</li>
+<li>
+    Score: Evaluates the model's ability to make accurate predictions.
+</li>
+<li>
+    Time/Performance: Measures the computational efficiency and speed of the model.
+</li>
 </ul>
 
 
