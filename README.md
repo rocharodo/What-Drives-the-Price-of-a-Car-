@@ -305,7 +305,7 @@ By visualizing the grouped distribution, we can identify:
 This analysis facilitates a deeper understanding of the complex relationships between categorical features and the target variable, ultimately supporting more informed decision-making.
 </p>
 <div style="text-align:center;">
-    <img width="1100" src="histo.png" />
+    <img width="1100" src="data/histo.png" />
 </div>
 
 <h2>Initial Observations and Data Quality Concerns</h2>
@@ -416,7 +416,7 @@ For the remaining features with null values, I applied the following imputation 
 </p>
 <br />
 <div style="text-align:center;">
-    <img width="1100" src="histo_cleansed.png" />
+    <img width="1100" src="data/histo_cleansed.png" />
 </div>
 <h2>Result Analysis</h2>
 <p>
@@ -428,7 +428,7 @@ The price graph is now displaying different information. Previously, it displaye
 The graph below provides a direct comparison between the original data price vs. year and the cleansed data price vs. year. At a glance, we can appreciate the significant improvement in data distribution. The cleansed data, now more evenly distributed, will serve as the foundation for further analysis, enabling more accurate and reliable conclusions.
 </p>
 <div style="text-align:center;">
-    <img width="1100" src="pricevsyear.png" />
+    <img width="1100" src="data/pricevsyear.png" />
 </div>
 
 <h2>Data Preparation</h2>
@@ -679,7 +679,7 @@ To predict car prices, the following models were evaluated:
 <p><strong>Permutation Importance:</strong> Which features matter most?</p>
 
 <div style="text-align:center;">
-    <img src="permutation.png" />
+    <img src="data/permutation.png" />
 </div>
 <ul>
     <li>
@@ -699,7 +699,7 @@ To predict car prices, the following models were evaluated:
     <strong>Coefficients:</strong> How much do individual features impact the prediction?
 </p>
 <div style="text-align:center;">
-    <img src="coefficients.png" />
+    <img src="data/coefficients.png" />
 </div>
 
 <ul>
